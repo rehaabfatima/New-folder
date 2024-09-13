@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>ASYNC</title>
+    </head>
+    <body>
+        <h1>Async function</h1>
+        <p id="result"></p>
+        <script>
+            async function add(a,b){
+                let response = await a + b;
+                display(response);
+            }
+            function display(sum){
+                document.getElementById("result").innerHTML= sum;
+
+            }
+            add(60,8);
+
+        </script>
+    </body>
+</html>

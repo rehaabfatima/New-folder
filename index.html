@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>JSON</title>
+    </head>
+    <body>
+        <h1>Converting JS into JSON </h1>
+        <p id="result"></p>
+        <script>
+            var myobj={name:"Rehaab",age:16,grade:11};
+            var myJSON= JSON.stringify(myobj);
+            var newobj=JSON.parse(myJSON);
+            document.getElementById("result").innerHTML=newobj.name;
+
+        </script>
+    </body>
+</html>
